@@ -55,4 +55,12 @@
       <% } %>
     </div>
   <% } %>
+  <% if (footer.beian && footer.beian.length) { %>
+    <div class="footer-beian">
+      <% footer.beian.forEach(function(item, index) { %>
+        <% if (index > 0) { %><span class="beian-divider">|</span><% } %>
+        <a href="<%= item.url %>" target="_blank" rel="noopener"><%= item.text %></a>
+      <% }) %>
+    </div>
+  <% } %>
 </footer>

@@ -2,6 +2,9 @@
 # Bloom Theme Configuration
 # ==========================================
 
+# ---- Favicon ----
+favicon: /images/favicon.ico
+
 # ---- Navigation Menu ----
 nav:
   Home: /
@@ -14,23 +17,22 @@ nav:
 # ---- Profile / Intro ----
 profile:
   enabled: true
-    #avatar: /images/avatar.png
-  gravatar_email: ""
-    #title: "Swing"
-  subtitle: "努力是为了 站在万人中央 成为别人的光"
+  #avatar: /images/android-chrome-96x96.png
+  title: "Ningkai Wang"
+  subtitle: "Talk is cheap. Show me code."
   description: |
-    Know it then hack it!
+    王宁凯的个人技术博客，分享技术文章和学习笔记。
 
 # ---- Homepage Columns (Core Feature) ----
 # Enable categorized columns on homepage
 # Max 2 columns supported
 columns:
   enabled: false
-  layout: two-column           # single-column | two-column
+  layout: two-column # single-column | two-column
   items:
-    - name: Security           # Display name
-      category: Writeup       # Category slug
-      limit: 10                # Number of posts to show
+    - name: Security # Display name
+      category: Writeup # Category slug
+      limit: 10 # Number of posts to show
       show_date: true
     - name: Note
       category: Note
@@ -51,56 +53,61 @@ search:
 
 # ---- Social Links ----
 social:
-  github: "https://github.com/WinMin"
-  twitter: "https://twitter.com/bestswngs"
-  email: "mailto:ask@mail.exp.sh"
+  github: "https://github.com/wangningkai"
+  twitter: ""
+  email: "mailto:i@ningkai.wang"
   weibo: ""
   rss: /atom.xml
 
 # ---- Footer ----
 footer:
-  copyright_since: 2024
+  copyright_since: 2018
   powered_by: true
   theme_info: true
+  beian:
+    - text: 苏ICP备16063755号-1
+      url: https://beian.miit.gov.cn/
+    - text: 苏ICP备16063755号-2
+      url: https://beian.miit.gov.cn/
 
 # ---- Appearance ----
 colorscheme: dark
 
 # ---- Layout Width ----
 layout:
-  page_width: 60          # 整体页面最大宽度 (rem)
-  content_width: 900      # 文章内容区宽度 (px)
-  mobile_padding: 12      # 移动端两侧边距 (px)
+  page_width: 48 # 整体页面最大宽度 (rem)
+  content_width: 900 # 文章内容区宽度 (px)
+  mobile_padding: 12 # 移动端两侧边距 (px)
 
 # ---- Logo ----
 logo:
-  enabled: false
-  image: /images/logo.png
-  width: 100
-  height: 100
+  enabled: true
+  image: https://cdn.jsdelivr.net/gh/wangningkai/wangningkai/assets/20200820092816.png
+  width: 50
+  height: 50
 
 # ---- Post Settings ----
 post:
-  show_updated: true
+  show_updated: false
   show_wordcount: false
   show_readtime: false
   excerpt_link: "Read More"
-  toc: true
+  toc: false
 
 # ---- Code Highlight ----
 highlight:
-  theme: tomorrow-night
+  theme: rainbow
   copy_button: true
 
 # ---- Comments ----
 comments:
   enabled: true
-  provider: ""                 # disqus | utterances | giscus
+  provider: "utterances" # disqus | utterances | giscus
   disqus:
-    shortname: "swing"
+    shortname: ""
   utterances:
-    repo: ""
-    issue_term: pathname
+    repo: "wangningkai/utterances-repo"
+    issue_term: blog
   giscus:
     repo: ""
     repo_id: ""
@@ -109,8 +116,8 @@ comments:
 
 # ---- Analytics ----
 analytics:
-  google: "UA-133464311-1"
-  baidu: "2e6da3c375c8a87f5b664cea6d4cb29c"
+  google: "G-0D2QZZY2MP"
+  #baidu: "2e6da3c375c8a87f5b664cea6d4cb29c"
 
 # ---- 404 Page ----
 error_404:
